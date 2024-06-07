@@ -25,11 +25,13 @@ class PersonController extends Controller
     {
         $request->validate([
             'name'=> 'required|string|min:5|max:100',
-            'age'=> 'required|integer||min:1'
+            'age'=> 'required|integer||min:1',
+            'caracteristicas'=> 'nullable|array',
              
         ]);
         
-        person::create($request->all());
+       $person= person::create($request->all());
+        return response()->json($person, 201);
         return redirect()->route('persons.index');
     }
 

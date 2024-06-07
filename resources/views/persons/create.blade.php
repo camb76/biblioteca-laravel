@@ -19,6 +19,10 @@
     <label class="block text-gray-700 text-sm font-bold mb-2" for="age">Edad</label>
     <input name="age" id="age" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="number" placeholder="Edad">
   </div>
+  <div class="mb-6">
+    <label class="block text-gray-700 text-sm font-bold mb-2" for="caracteristicas">caracteristicas</label>
+    <input name="caracteristicas" id="caracteristicas" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="text" placeholder="caracteristicas">
+  </div>
   <div class="flex items-center justify-between">
     <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
       Guardar

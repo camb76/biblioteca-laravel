@@ -21,6 +21,6 @@ class index extends Component
      */
     public function render(): View
     {
-        return view('components.index');
+        return view('layouts.index');
     }
 }

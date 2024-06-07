@@ -1,3 +1,4 @@
+@extends('layouts.index')
 <x-index>
     <x-slot name="header">
         <x-nav-index />
