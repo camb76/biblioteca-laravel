@@ -6,7 +6,7 @@
 
 
     <x-body-index :persons="$persons">
-        <x-sidebar-index />
+       
 
 
 

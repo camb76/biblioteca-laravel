@@ -1,4 +1,25 @@
 <div class="lg:flex-1 overflow-x-auto">
+    <div class="flex flex-col lg:flex-row h-screen">
+        <!-- Sidebar -->
+        <div class="lg:w-1/5 bg-black/70">
+            <div class="p-6">
+                <h2 class="text-white text-lg font-semibold">Sidebar</h2>
+                <ul class="mt-6">
+                    <li>
+                        <a href="#" class="block text-gray-300 hover:bg-gray-700 px-4 py-2 rounded">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-gray-300 hover:bg-gray-700 px-4 py-2 rounded">Acerca de</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-gray-300 hover:bg-gray-700 px-4 py-2 rounded">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block text-gray-300 hover:bg-gray-700 px-4 py-2 rounded">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-9">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg p-6">
@@ -23,7 +44,7 @@
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $person->id }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $person->name }}</td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $person->age }}</td>
-                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{ $person->caracteristicas }}</td>
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-900">{{  json_encode($person->caracteristicas) }}</td>
                                 <td class="border px-6 py-4 text-center">
                                     <div class="flex justify-center">
                                         <a href="{{ route('persons.edit', $person->id) }}" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mr-2 rounded">Editar</a>
@@ -34,6 +55,8 @@
                             @endforeach
                         </tbody>
                     </table>
-                </div>
-            </div>
+                </div> 
+            </div>  
         </div>
+        </div>
+    
